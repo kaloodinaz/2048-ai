@@ -2,23 +2,28 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048 AI Solver</title>
-<meta name="description" content="Enhance your 2048 gaming experience with the AI Solver. Boost your strategy and skill level as the AI algorithm navigates the 2048 puzzle, providing solutions and optimizing your gameplay. Elevate your performance in the 2048 game using the powerful AI Solver. Try it now and master the art of 2048 with artificial intelligence assistance.">
-
-  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <title>2048 AI Solver | Play 2048 AI game</title>
+<link rel="manifest" href="/manifest.json"/>
+<meta name="description" content="Master the 2048 game effortlessly with the 2048 AI Solver! Use advanced algorithms to find the best moves and achieve the elusive 2048 tile. Perfect for beginners and experts alike">
+<link href="style/main.css" rel="stylesheet" type="text/css">
   <link href="style/ai.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="2048 AI game"/>
   <meta property="og:site_name" content="2048 AI game"/>
-  <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!"/>
+  <meta property="og:description" content="Learn about the 2048 AI Solver, how it works, and strategies it uses to solve the popular 2048 puzzle game efficiently"/>
   <meta property="og:image" content="/meta/og_image.png"/>
 </head>
 <body>
+<script>
+      if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+      .then(registration => {console.log('Service Worker registered successfully:', registration);})
+      .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+      </script>
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
@@ -103,6 +108,57 @@
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
+	   <h1>2048 AI Solver: Master the Game with Artificial Intelligence</h1>
+    <p>The 2048 AI Solver is an innovative solution to mastering the popular tile-sliding puzzle game, 2048. Whether you are a casual player seeking tips to improve or a developer curious about artificial intelligence strategies, the AI Solver provides insights into the game's mechanics and the optimal ways to win.</p>
+
+    <p>The 2048 game, created by Gabriele Cirulli in 2014, gained immense popularity for its simple yet addictive gameplay. Players slide numbered tiles on a 4x4 grid, merging tiles of the same value to create higher numbers, with the ultimate goal of reaching the 2048 tile. Despite its simplicity, the game requires strategy and foresight, making it a challenging puzzle for many.</p>
+
+    <h2>How Does the 2048 AI Solver Work?</h2>
+    <p>The 2048 AI Solver uses advanced algorithms to determine the best moves in the game. These algorithms simulate various game scenarios and evaluate potential outcomes to make decisions that maximize the score or increase the likelihood of achieving the 2048 tile. Some of the commonly used algorithms include:</p>
+    <ul>
+        <li><strong>Minimax Algorithm:</strong> This algorithm analyzes the game tree, simulating all possible moves and counter-moves to choose the optimal strategy.</li>
+        <li><strong>Expectimax Algorithm:</strong> A probabilistic version of Minimax, this algorithm accounts for the randomness of tile spawns, making it particularly effective for 2048.</li>
+        <li><strong>Heuristic Evaluation:</strong> The AI evaluates the game state based on certain heuristics, such as the highest tile value, tile placement, and grid smoothness.</li>
+    </ul>
+
+    <h2>Benefits of Using a 2048 AI Solver</h2>
+    <p>Using an AI Solver for 2048 offers several advantages, including:</p>
+    <ul>
+        <li><strong>Learning Strategy:</strong> Players can observe the AI's moves to understand effective strategies and improve their gameplay.</li>
+        <li><strong>Demonstrating AI Capabilities:</strong> The solver showcases the practical application of AI algorithms in solving real-world problems.</li>
+        <li><strong>Achieving High Scores:</strong> The AI solver can consistently achieve high scores, making it a reliable tool for mastering the game.</li>
+    </ul>
+
+    <h2>Strategies Employed by the 2048 AI Solver</h2>
+    <p>The AI Solver relies on specific strategies to optimize its gameplay. Some of these include:</p>
+    <ul>
+        <li><strong>Corner Strategy:</strong> The AI attempts to keep the highest tile in one corner of the grid, ensuring better control of the board.</li>
+        <li><strong>Tile Merging:</strong> The solver prioritizes merging tiles to free up space on the grid and create higher-value tiles.</li>
+        <li><strong>Minimizing Empty Spaces:</strong> By keeping the grid filled strategically, the AI reduces the risk of running out of moves.</li>
+        <li><strong>Anticipating Tile Spawns:</strong> The solver predicts where new tiles will appear and adjusts its moves accordingly.</li>
+    </ul>
+
+    <h2>Challenges in Developing a 2048 AI Solver</h2>
+    <p>Creating an effective AI Solver for 2048 is no small feat. Developers face several challenges, such as:</p>
+    <ul>
+        <li><strong>Randomness:</strong> The game introduces new tiles randomly, adding an element of unpredictability.</li>
+        <li><strong>Computational Complexity:</strong> Simulating all possible game scenarios can be computationally intensive.</li>
+        <li><strong>Balancing Heuristics:</strong> Choosing the right combination of heuristics is crucial for optimal performance.</li>
+    </ul>
+
+    <h2>How to Use a 2048 AI Solver</h2>
+    <p>Using a 2048 AI Solver is straightforward. Several online solvers and applications allow users to input their current game state or play directly with the AI making decisions in real time. Here are the basic steps:</p>
+    <ol>
+        <li>Search for a reliable 2048 AI Solver tool online.</li>
+        <li>Input your current game state or start a new game within the tool.</li>
+        <li>Observe the AI's moves and learn from its strategy.</li>
+        <li>Apply the learned techniques to your own gameplay to improve your skills.</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>The 2048 AI Solver is a testament to the power of artificial intelligence in solving complex puzzles. Whether you're a player looking to master the game or a developer exploring AI applications, the solver offers valuable insights and practical benefits. By understanding the algorithms and strategies employed by the AI, you can enhance your appreciation for both the game and the technology behind it.</p>
+
+	  <hr>
     <p>
     Created design by Gabriele Cirulli.</a>
     </p>
@@ -121,15 +177,15 @@
     </div>
   </div>
 
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/hammer.min.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/ai.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+  <script defer src="js/animframe_polyfill.js"></script>
+  <script defer src="js/hammer.min.js"></script>
+  <script defer src="js/keyboard_input_manager.js"></script>
+  <script defer src="js/html_actuator.js"></script>
+  <script defer src="js/grid.js"></script>
+  <script defer src="js/tile.js"></script>
+  <script defer src="js/ai.js"></script>
+  <script defer src="js/game_manager.js"></script>
+  <script defer src="js/application.js"></script>
 
 </body>
 </html>
